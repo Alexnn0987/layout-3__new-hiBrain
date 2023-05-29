@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новости hiBrain</title>
+    
+    <!-- Подключение шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Roboto+Slab:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Основные стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="news-wrapper">
+        <!-------------------- Заголовок -------------------->
+        <header class="header-main">
+            <div class="container">
+                <div class="header-row d-flex flex-sb">
+                    <div class="header-group d-flex flex-sb">
+                        <a href="#" class="header-logo">
+                            <img src="images/header-logo.jpg" alt="верхнее лого">
+                        </a>
+                        <a href="#loud-board-search" class="header-search">
+                            <img src="images/header-search.svg" alt="иконка поиска">
+                        </a>
+                        <a href="#" class="btn-place">Разместить объявление</a>
+                    </div>
+                    <a href="#" class="header-login d-flex">
+                        <img src="images/icon-login.svg" alt="Логин">
+                        <span>Войти</span>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <!-------------------- Доска объявлений -------------------->
+        <div class="loud-board">
+            <div class="container">
+                <div class="loud-board__block d-flex flex-sb">
+                    <div class="loud-board__list">
+                        <h1 class="item-title">Доска объявлений</h1>
+                        <p class="item-text">Обо всех важных событиях IT и Digital мира: дайджесты курсов, полезные ресурсы, митапы, конференции, хакатоны и новости от команды HiBrain</p>
+                        <form id="loud-board-search" class="d-flex flex-sb">
+                            <input type="search" placeholder="Поиск" class="search-string"> 
+                            <button type="submit" class="search-submit">
+                                <img src="images/loud-board-search.svg" alt="иконка поиска">
+                            </button>
+                        </form>
+                    </div>
+                    <img src="images/loud-board.jpg" alt="Рупор" class="board-image">
+                </div>
+            </div>
+        </div>
+        <!-------------------- Новостная лента -------------------->
+        <div class="container">
+            <section class="news-feed">
+                <nav class="nav-news d-flex">
+                    <ul class="nav-news__list d-flex flex-sb">
+                        <li><a href="#">Вся доска</a></li>
+                        <li><a href="#">Бытовая техника</a></li>
+                        <li><a href="#">Одежда</a></li>
+                        <li><a href="#">Автомобили</a></li>
+                        <li><a href="#">Телефоны</a></li> 
+                    </ul>
+                </nav>
+                <!-- Лента -->
+                <div class="news-feed__title"><span>Вся лента</span></div>
+                <div class="news-feed__list d-grid grid-col-3">
+                    <!-- блок-1 -->
+                    <div class="new-item">
+                        <div class="new-image_headset d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Техника</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text"> 
+                                <a href="#" class="title">Стиральная машинка Bosch</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                                <span class="sum d-flex">1000 Р</span>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-2 -->
+                    <div class="new-item">
+                        <div class="new-image_city d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Одежда</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">Шапочка</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-3 -->
+                    <div class="new-item">
+                        <div class="new-image_city d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Одежда</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">Шапочка</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-4 -->
+                    <div class="new-item">
+                        <div class="new-image_headset d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Статьи</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">Дайджест IT-вакансий за март 2021</a>
+                                <p class="deskription">Актуальные вакансии Intern и Junior IT-разработчикам в Нижнем Новгороде. Предложения работы от партнёров платформы подготовки и трудоустройства IT-специалистов HiBrain.</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-5 -->
+                    <div class="new-item">
+                        <div class="new-image_city d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Статьи</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">С Новым 2021 годом!</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-6 -->
+                    <div class="new-item">
+                        <div class="new-image_city d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Статьи</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">С Новым 2021 годом!</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-7 -->
+                    <div class="new-item">
+                        <div class="new-image_headset d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Статьи</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">Дайджест IT-вакансий за март 2021</a>
+                                <p class="deskription">Актуальные вакансии Intern и Junior IT-разработчикам в Нижнем Новгороде. Предложения работы от партнёров платформы подготовки и трудоустройства IT-специалистов HiBrain.</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-8 -->
+                    <div class="new-item">
+                        <div class="new-image_city d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Статьи</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">С Новым 2021 годом!</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- блок-9 -->
+                    <div class="new-item">
+                        <div class="new-image_city d-flex">
+                            <div class="new-image_text d-flex">
+                                <a href="#">Статьи</a>
+                            </div>
+                        </div>
+                        <div class="news-content">
+                            <div class="news-text">
+                                <a href="#" class="title">С Новым 2021 годом!</a>
+                                <p class="deskription">Уходящий год для айтишников прошёл под девизом: «Work hard, learn more».</p>
+                            </div>                            
+                            <div class="watched-date d-flex flex-sb">
+                                <div class="item-date d-flex">14 апреля 2021</div>
+                                <div class="item-watched d-flex">
+                                    <img src="images/icon-watched.svg" alt="иконка смотрели">
+                                    <span class="count d-flex">356</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-loading d-flex">
+                    <button class="new-loading-btn d-flex">
+                        <img src="images/arrows-reverse.svg" alt="обратные стрелки">
+                        <span>Загрузить еще</span>
+                    </button>
+                </div>
+                
+            </section>
+        </div>
+        <!-------------------- Подвал -------------------->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-main d-flex flex-sb">
+                    <div class="footer-content d-flex flex-sb">
+                        <img src="images/footer-logo.svg" alt="нижний лого" class="footer-content-logo">
+                        <span class="footer-content-text d-flex">Платформа подготовки и трудоустройства IT-специалистов</span>
+                    </div>
+                    <div class="footer-social-links d-flex flex-sb">
+                        <a href="https://www.facebook.com/" title="facebook.com" target="_blank"><img src="images/icon-facebook.svg" alt="facebook"></a>
+                        <a href="https://instagram.com/" title="instagram.com" target="_blank"><img src="images/icon-instagram.svg" alt="instagram"></a>
+                        <a href="https://vk.com/" title="vk.com" target="_blank"><img src="images/icon-vk.svg" alt="vkontakte"></a>
+                    </div>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer-nav__list d-flex flex-sb">
+                        <li><a href="#">Курсы</a></li>
+                        <li><a href="#">Трудоустройство</a></li>
+                        <li><a href="#">Сотрудничество</a></li>
+                        <li><a href="#">O Hibrain</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+                <div class="footer-info d-flex flex-sb">
+                    <span>© ООО «Лад Ай Ти», 2020</span>
+                    <a href="#">Политика конфиденциальности</a>
+                    <a href="#">support@hibrain.pro</a>
+                    <a href="#">8 800 000 00 00</a>
+                </div>
+            </div>
+        </footer>
+        
+    </div>
+</body>
+</html>
